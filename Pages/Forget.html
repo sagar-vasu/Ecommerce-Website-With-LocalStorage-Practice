@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/Forget.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="global-container">
+      <div class="card login-form">
+        <div class="card-body">
+          <h3 class="card-title text-center">Reset Account</h3>
+          <div class="card-text">
+            <form>
+              <div id="before">
+                <div class="form-group">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-sm"
+                    id="email"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+
+                <button
+                  type="button"
+                  onclick="searchEmail()"
+                  class="btn btn-primary btn-block"
+                  style="width: 100%"
+                >
+                  Search Now
+                </button>
+              </div>
+              <div id="after">
+                <div class="form-group">
+                  <label for="oldPassword">Old Password</label>
+                  <input
+                    type="password"
+                    class="form-control form-control-sm"
+                    id="oldPassword"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="newPassword">New Password</label>
+                  <input
+                    type="password"
+                    class="form-control form-control-sm"
+                    id="newPassword"
+                  />
+                </div>
+                <button
+                  type="button"
+                  onclick="updatePassword()"
+                  class="btn btn-primary btn-block"
+                  style="width: 100%"
+                >
+                  Update Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../JS/Forget.js"></script>
+  </body>
+</html>
